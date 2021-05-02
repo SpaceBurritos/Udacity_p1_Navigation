@@ -15,3 +15,5 @@ The rest of the hyperparameters used for the project were:
   Learning rate -> 5e-4</br>
   Batch size -> 64</br>
   Buffer Size -> 1e5</br>
+
+The model got an average of over 13 points after 1400 iterations:
