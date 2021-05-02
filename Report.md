@@ -1,9 +1,9 @@
 The arquitecture used for the DNN consisted of 1 input layer and  3 deep layers (including the output layer).  
 The number of nodes from the input layer to the output layer were:  
-  37 (state_size) -> 256. 
-  256 -> 512. 
-  512 -> 512. 
-  512 -> action_size. 
+  37 (state_size) -> 256</br> 
+  256 -> 512</br>
+  512 -> 512</br>
+  512 -> action_size</br>
   
 For all the layers, excluding the output layer, a ReLU activaiton function was used, and for getting the probability distribution of the actions a softmax function was used. 
 
