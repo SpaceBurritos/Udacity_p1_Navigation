@@ -19,13 +19,13 @@ class Model(nn.Module):
         super(Model, self).__init__()
         self.seed = torch.manual_seed(seed)
         self.linear_relu_stack = nn.Sequential(
-                nn.Linear(state_size, 256),
+                nn.Linear(state_size, 64),
                 nn.ReLU(),
-                nn.Linear(256, 512),
+                nn.Linear(64, 128),
                 nn.ReLU(),
-                nn.Linear(512,512),
+                nn.Linear(128,128),
                 nn.ReLU(),
-                nn.Linear(512, action_size),
+                nn.Linear(128, action_size),
                 nn.Softmax(dim=1)
                 )
     
