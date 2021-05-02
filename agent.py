@@ -13,15 +13,15 @@ BATCH_SIZE = 64
 GAMMA = 0.99
 TAU = 1e-3
 LR = 5e-4
-UPDATE_EVERY = 4
-SEED = 5
+UPDATE_EVERY = 8
+SEED = 0
 
 device = "cuda"if torch.cuda.is_available() else "cpu"
 
 class Agent:
     
     def __init__(self, state_size, action_size):
-        self.seed = random.seed()
+        self.seed = random.seed(SEED)
         self.state_size = state_size
         self.action_size = action_size
         self.main_model = Model(state_size, action_size, SEED).to(device)
