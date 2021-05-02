@@ -17,3 +17,4 @@ The rest of the hyperparameters used for the project were:
   Buffer Size -> 1e5</br>
 
 The model got an average of over 13 points after 1400 iterations:
+![GitHub Logo](/resources/learningGraph.png)
