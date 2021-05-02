@@ -5,7 +5,7 @@ The number of nodes from the input layer to the output layer were:
   128 -> 128</br>
   128 -> action_size</br>
   
-For all the layers, excluding the output layer, a ReLU activaiton function was used, and for getting the probability distribution of the actions a softmax function was used. 
+For all the layers, excluding the output layer, a ReLU activaiton function was used, and for getting the probability distribution of the actions, a softmax function was used. 
 
 The rest of the hyperparameters used for the project were:  
   epsilon -> 1</br>
