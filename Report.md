@@ -8,10 +8,10 @@ The number of nodes from the input layer to the output layer were:
 For all the layers, excluding the output layer, a ReLU activaiton function was used, and for getting the probability distribution of the actions a softmax function was used. 
 
 The rest of the hyperparameters used for the project were:  
-  epsilon -> 1. 
-  epsilon decay -> 0.995. 
-  gamma -> 0.99. 
-  Tau -> 1e-3. 
-  Learning rate -> 5e-4. 
-  Batch size -> 64. 
-  Buffer Size -> 1e5. 
+  epsilon -> 1</br>
+  epsilon decay -> 0.995</br>
+  gamma -> 0.99</br>
+  Tau -> 1e-3</br>
+  Learning rate -> 5e-4</br>
+  Batch size -> 64</br>
+  Buffer Size -> 1e5</br>
