@@ -1,4 +1,4 @@
-The learning algorithm used for these project was the DQN (deep q-network)
+The learning algorithm used for these project was the DQN (deep q-network), which is a value-based algorithm that uses two DNN models with the same architecture and an experience replay, that uses a random sample of prior actions of the most recent action as training data. Soft updates were used in the target model to minimize the oscilation of the main model while learning.
 
 The arquitecture used for the DNN consisted of 1 input layer and  2 deep layers (including the output layer).  
 The number of nodes from the input layer to the output layer were:  
