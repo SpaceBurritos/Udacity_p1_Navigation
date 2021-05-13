@@ -18,3 +18,6 @@ The rest of the hyperparameters used for the project were:
 
 The model got an (100 episode) average of over 13 points after 1084 iterations:
 ![GitHub Logo](/resources/learningGraph2.png)
+
+
+For future ideas a prioritized experience replay could be added, as well as a double or dueling DQN, also, more tweaks to the hyperparameters and the model structure could improve the learning rate
