@@ -9,14 +9,13 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 BUFFER_SIZE = int(1e5)
-BATCH_SIZE = 64
+BATCH_SIZE = 256
 GAMMA = 0.99
 TAU = 1e-3
-LR = 5e-4
 UPDATE_EVERY = 8
-SEED = 0
+SEED = 7
 
-device = "cuda"if torch.cuda.is_available() else "cpu"
+device = "cuda"if torch.cuda.is_available() else "cpu" 
 
 class Agent:
     
@@ -27,7 +26,8 @@ class Agent:
         self.main_model = Model(state_size, action_size, SEED).to(device)
         self.target_model = Model(state_size, action_size, SEED).to(device)
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE)
-        self.optimizer = optim.Adam(self.main_model.parameters(), lr=LR)
+        self.lr = 5e-4
+        self.optimizer = optim.Adam(self.main_model.parameters(), lr=self.lr)
         self.i = 0
         
     
@@ -55,6 +55,9 @@ class Agent:
             if len(self.memory) > BATCH_SIZE:
                 experiences = self.memory.sample()
                 self.learn(experiences, GAMMA)
+                #self.lr *= LR_DECAY
+                #self.optimizer = optim.Adam(self.main_model.parameters(), lr=self.lr)
+
 
     
     def learn(self, experiences, gamma):

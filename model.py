@@ -21,11 +21,9 @@ class Model(nn.Module):
         self.linear_relu_stack = nn.Sequential(
                 nn.Linear(state_size, 64),
                 nn.ReLU(),
-                nn.Linear(64, 128),
-                nn.ReLU(),
-                nn.Linear(128,128),
-                nn.ReLU(),
-                nn.Linear(128, action_size),
+                nn.Linear(64, 64),
+                nn.ReLU(),                
+                nn.Linear(64, action_size),
                 nn.Softmax(dim=1)
                 )
     
