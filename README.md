@@ -35,5 +35,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 ### Instructions
 
+For setting up the python environment, please follow the instructions in [this link](https://github.com/udacity/deep-reinforcement-learning#dependencies)</br>
+
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
 
