@@ -1,3 +1,5 @@
+The learning algorithm used for these project was the DQN (deep q-network)
+
 The arquitecture used for the DNN consisted of 1 input layer and  2 deep layers (including the output layer).  
 The number of nodes from the input layer to the output layer were:  
   37 (state_size) -> 64</br> 
